@@ -1,0 +1,87 @@
+::selection {
+  background-color: var(--bs-primary);
+  color: white;
+}
+p {
+  margin-bottom: 0px !important;
+}
+ul {
+  padding-left: 0px !important;
+}
+li {
+  list-style: none;
+}
+.nav-link-hover:hover {
+  transition: color 0.3s linear;
+  color: var(--bs-primary) !important;
+}
+@media (min-width: 992px) {
+  .nav-link-hover {
+    font-size: 16px !important;
+  }
+}
+.link-hover {
+  transition: color 0.3s linear;
+}
+.link-hover:hover {
+  color: var(--bs-primary);
+}
+a {
+  color: black !important;
+  text-decoration: none !important;
+  transition: color 0.3s linear;
+}
+a:hover {
+  color: var(--bs-primary) !important;
+}
+.carousel-indicators button {
+  border-radius: 100%;
+  width: 16px !important;
+  height: 16px !important;
+}
+.carousel-indicators button.active {
+  background-color: var(--bs-primary);
+}
+
+@media (min-width: 992px) {
+  .w-lg-50 {
+    max-width: 50% !important;
+  }
+  .vh-lg-100 {
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+  }
+}
+::placeholder {
+  text-transform: capitalize;
+  color: lightgray !important;
+}
+textarea {
+  resize: none !important;
+}
+.department-section-btn {
+  border: 0px;
+  background-color: transparent;
+  transition: color 0.2s linear, background-color 0.2s linear !important;
+  cursor: pointer;
+}
+.department-section-btn:hover,
+.department-section-btn[data-isactive="true"] {
+  background-color: var(--bs-primary) !important;
+  color: white !important;
+}
+@media (min-width: 992px) {
+  .department-section-btn {
+    border-right: 2px solid lightgray !important;
+  }
+  .department-section-btn:hover,
+  .department-section-btn[data-isactive="true"] {
+    background-color: initial !important;
+    color: var(--bs-primary) !important;
+    border-right: 2px solid var(--bs-primary) !important;
+  }
+}
+.accordion-button::after {
+  --bs-accordion-btn-icon-transform: rotate(90deg);
+  rotate: -90deg;
+}
